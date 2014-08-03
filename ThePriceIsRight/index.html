@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>The Price Is Right</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="Scripts/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/ThePriceIsRight/Countdown.js"></script>
+    <script src="Scripts/ThePriceIsRight/PriceGenerator.js"></script>
+    <script src="Scripts/ThePriceIsRight/PriceChecker.js"></script>
+    <script src="Scripts/ThePriceIsRight/PlayerInputManager.js"></script>
+    <script src="Scripts/ThePriceIsRight/GameSettings.js"></script>
+    <script src="Scripts/ThePriceIsRight/Game.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <div class="game-menu">
+        <h1>The Price Is Right</h1>
+        <select id="ddlGameLevel">
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+        </select>
+        <br />
+        <button id="btnStartGame">Start Game</button>
+        <br /><br /><br /><br />
+        <div class="footer">&copy; 2014 - YPCode</div>
+    </div>
+
+    
+
+    <div class="player-set">
+        <div class="message-box">
+            <span class="message-content"></span>
+        </div>
+        <h1>The Price Is Right</h1>
+        <div id="leftbar">
+            <span class="label">Time:</span>
+            <div class="countdown"></div>
+            <span class="label">Max Tries:</span>
+            <div class="attempt-number max-attempts"></div>
+            <span class="label">Nb Tries:</span>
+            <div class="attempt-number current-attempts"></div>
+        </div>
+        <div id="rightbar">
+            <div class="player-input">
+            </div>
+            <div class="game-hint">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
